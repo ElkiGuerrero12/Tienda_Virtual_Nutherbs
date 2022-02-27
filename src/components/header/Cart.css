@@ -1,0 +1,15 @@
+.pageCarrito {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 62px;
+}
+
+.terminarCompra {
+  background-color: #25b244;
+  color: white;
+  width: 40%;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+}

@@ -1,0 +1,121 @@
+.header {
+  background-color: #25b244;
+  font-size: 1.7rem;
+  color: white;
+  height: 70px;
+
+  z-index: 99;
+  width: 100%;
+}
+
+.header-section {
+  padding-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  position: relative;
+}
+
+.header-section ul {
+  display: flex;
+}
+
+.header-section li {
+  padding-right: 20px;
+  list-style: none;
+}
+
+.header-section li a {
+  color: white;
+  display: flex;
+}
+
+.header-section li a span {
+  border-radius: 100%;
+  border: 2px solid;
+  margin-left: 16px;
+  top: 12px;
+  font-size: 13px;
+  width: 19px;
+  height: 20px;
+  position: absolute;
+}
+
+.logo {
+  color: white;
+  font-size: 2rem;
+}
+
+.carrito {
+  font-size: 2.4rem !important;
+}
+
+.ulNavbar a {
+  color: white;
+  font-size: 18px;
+}
+
+@media (max-width: 799px) {
+  .header-section {
+    display: block;
+    padding: 0px;
+  }
+
+  .header-section ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carrito {
+    top: -14px;
+    position: relative;
+  }
+
+  .header-section li a {
+    justify-content: end;
+  }
+
+  .header-section li a span {
+    top: 23px;
+  }
+}
+
+@media (max-width: 499px) {
+  .header {
+    height: 90px;
+  }
+
+  .header-section li a {
+    font-size: 16px;
+    justify-content: flex-end;
+  }
+
+  .carrito {
+    top: 14px;
+  }
+
+  .header-section li a span {
+    top: 49px;
+  }
+}
+
+@media (max-width: 357px) {
+  .carrito {
+    top: -7px;
+  }
+
+  .header-section li a span {
+    top: 49px;
+  }
+}
+
+@media (max-width: 260px) {
+  .carrito {
+    top: -29px;
+  }
+
+  .header-section li a span {
+    top: 49px;
+  }
+}

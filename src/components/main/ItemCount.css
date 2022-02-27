@@ -1,0 +1,29 @@
+.contenedorButton {
+  margin: 20px;
+  text-align: center;
+}
+
+.buttonMasMenosIz {
+  background-color: #25b244;
+  font-size: 24px;
+  padding: 5px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.buttonMasMenosDer {
+  background-color: #25b244;
+  font-size: 24px;
+  padding: 5px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.contenedorButton span {
+  font-size: 12px;
+  margin: 2px;
+}
