@@ -2,7 +2,7 @@
   "name": "menu-e-commerce-elki-guerrero",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ElkiGuerrero12.github.io/Proyecto_Final_React_Tienda_Virtual_Nutherbs  ",
+  "homepage": "http://ElkiGuerrero12.github.io/Tienda_Virtual_Nutherbs",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
