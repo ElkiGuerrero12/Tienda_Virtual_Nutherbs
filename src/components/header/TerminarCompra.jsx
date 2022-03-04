@@ -2,12 +2,15 @@ import react, { useContext, useEffect, useState, useRef } from "react";
 import { cartContext } from "../../context/CartProvider";
 import { getFirestore } from "../../firebase/firebase";
 import firebase from "firebase/app";
+import { Link } from "react-router-dom";
 import "./TerminarCompra.css";
 
 function TerminarCompra() {
-  const { cart, precioTotal } = useContext(cartContext);
+  const { cart, clearCart, precioTotal } = useContext(cartContext);
   const [orderId, setOrderId] = useState("");
   const [total, setTotal] = useState(0);
+ 
+ 
 
   const nameRef = useRef();
   const emailRef = useRef();
@@ -16,8 +19,11 @@ function TerminarCompra() {
   const cityRef = useRef();
 
   useEffect(() => {
+    
     setTotal(precioTotal());
   }, [precioTotal]);
+
+ 
 
   const finalizarCompra = (e) => {
     e.preventDefault();
@@ -47,14 +53,21 @@ function TerminarCompra() {
         console.log(err);
       });
 
+      
+
     let desapareceFormulario =
       document.querySelectorAll(".formularioCompra")[0];
     desapareceFormulario.style.display = "none";
 
     let apareceMensajeCompraExitosa =
       document.querySelectorAll(".compraExitosa")[0];
-    apareceMensajeCompraExitosa.style.display = "block";
+    apareceMensajeCompraExitosa.style.display = "block";  
+    
+   
+    
   };
+
+ 
 
   return (
     <>
@@ -119,6 +132,10 @@ function TerminarCompra() {
           <h2>
             Felicidades su compra fue exitosa, su número de orden es: <span>{orderId}</span>
           </h2>
+          <div className="mensajeCartVacio">          
+          <Link to="/" onClick={() => clearCart()}>Ir al inicio</Link>
+        </div>
+          
         </div>
       </div>
     </>

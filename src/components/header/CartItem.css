@@ -18,9 +18,20 @@
   text-align: center;
 }
 
-.mensajeCartVacio p,
-a {
+.mensajeCartVacio p
+{
   font-size: 18px;
+  margin-bottom: 10px;
+  
+}
+
+.mensajeCartVacio a{
+  color: white;
+  background-color: #25b244;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px;
+
 }
 
 .agregar {
@@ -31,6 +42,7 @@ a {
   border-radius: 5px;
   padding: 5px;
   font-size: 15px;
+  margin-bottom: 30px;
 }
 
 .eliminarProducto {
